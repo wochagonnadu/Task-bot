@@ -125,6 +125,64 @@ graph TD
     Auth --> Invitation[Проверка приглашения]
 ```
 
+## Схема Базы Данных
+```mermaid
+erDiagram
+    users {
+        bigint telegram_id PK
+        varchar username
+        varchar full_name
+        varchar role
+    }
+
+    clients {
+        int id PK
+        varchar name
+    }
+
+    projects {
+        int id PK
+        int client_id FK
+        varchar name
+        text description
+        varchar status
+    }
+
+    tasks {
+        int id PK
+        int creator_id FK
+        int assignee_id FK
+        int client_id FK
+        int project_id FK
+        varchar title
+        varchar status
+        datetime due_date
+    }
+
+    task_times {
+        int id PK
+        int task_id FK
+        int user_id FK
+        date work_date
+        time start_time
+        time end_time
+    }
+
+    invitations {
+        int id PK
+        varchar code
+        bool is_used
+    }
+
+    users ||--o{ tasks : "creates"
+    users ||--o{ tasks : "is assigned"
+    users ||--o{ task_times : "logs time"
+    clients ||--o{ projects : "has"
+    clients ||--o{ tasks : "has"
+    projects ||--o{ tasks : "contains"
+    tasks ||--o{ task_times : "has"
+```
+
 ## Установка и настройка
 
 ### 1. Docker (рекомендуемый способ)
@@ -138,7 +196,7 @@ graph TD
 
 2.  **Создайте файл `.env`** в корневом каталоге и добавьте токены ваших ботов:
     ```env
-    # Bot Tokens
+    # Токены ботов
     TELEGRAM_BOT_TOKEN=
     USER_TELEGRAM_BOT_TOKEN=
 
@@ -197,4 +255,5 @@ graph TD
 После запуска ботов вы можете взаимодействовать с ними с помощью команд `/start` и `/help`, которые проведут вас по доступным интерактивным меню.
 
 ## Лицензия
-У этого проекта пока нет лицензии. Рекомендуется добавить файл `LICENSE`, например, с текстом [лицензии MIT](https://opensource.org/licenses/MIT).
+
+Этот проект лицензирован под лицензией MIT. Подробности смотрите в файле [LICENSE](LICENSE).

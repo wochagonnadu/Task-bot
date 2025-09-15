@@ -175,3 +175,6 @@ memory-bank/
 *.sqlite3
 *.db
 *.db-journal
+
+# deployment files
+amvera.yml
