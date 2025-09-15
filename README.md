@@ -43,8 +43,8 @@ Task-bot — это комплексная система управления �
     <td align="center">2. Бот запрашивает MASTER_KEY для первого входа с правами администратора.</td>
   </tr>
   <tr>
-    <td><img src="./assets/images/security_first_access_manager_approved.PNG" alt="Доступ разрешен" width="50%"></td>
-    <td><img src="./assets/images/access_denied.PNG" alt="Доступ запрещен" width="50%"></td>
+    <tdtd align="center"><img src="./assets/images/security_first_access_manager_approved.PNG" alt="Доступ разрешен" width="50%"></td>
+    <tdtd align="center"><img src="./assets/images/access_denied.PNG" alt="Доступ запрещен" width="50%"></td>
   </tr>
   <tr>
     <td align="center">3. MASTER_KEY принят.</td>
