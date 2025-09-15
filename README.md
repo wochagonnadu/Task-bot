@@ -35,16 +35,16 @@ Task-bot — это комплексная система управления �
 ### Безопасность и доступ
 <table>
   <tr>
-    <td><img src="./assets/images/security_invitation_code.PNG" alt="Пример кода приглашения"></td>
-    <td><img src="./assets/images/security_first_access_manager.PNG" alt="Запрос доступа от менеджера"></td>
+    <td><img src="./assets/images/security_invitation_code.PNG" alt="Пример кода приглашения" width="50%"></td>
+    <td><img src="./assets/images/security_first_access_manager.PNG" alt="Запрос доступа от менеджера" width="50%"></td>
   </tr>
   <tr>
     <td align="center">1. Пользователь вводит код приглашения.</td>
     <td align="center">2. Бот запрашивает подтверждение у администратора.</td>
   </tr>
   <tr>
-    <td><img src="./assets/images/security_first_access_manager_approved.PNG" alt="Доступ разрешен"></td>
-    <td><img src="./assets/images/access_denied.PNG" alt="Доступ запрещен"></td>
+    <td><img src="./assets/images/security_first_access_manager_approved.PNG" alt="Доступ разрешен" width="50%"></td>
+    <td><img src="./assets/images/access_denied.PNG" alt="Доступ запрещен" width="50%"></td>
   </tr>
   <tr>
     <td align="center">3. Администратор одобряет доступ.</td>
@@ -53,7 +53,7 @@ Task-bot — это комплексная система управления �
 </table>
 
 ### Пример интерфейса
-<img src="./assets/images/actions_example.PNG" alt="Пример меню с действиями">
+<img src="./assets/images/actions_example.PNG" alt="Пример меню с действиями" width="50%">
 *Пример инлайн-меню для управления задачами.*
 
 ### Демонстрация работы
